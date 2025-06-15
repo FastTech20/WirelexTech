@@ -10,6 +10,7 @@ import Account from './componets/pages/Account'
 import Orders from '../src/componets/pages/Oders'
 import MTN from '../src/componets/pages/MTN'
 import AFA from './componets/pages/Afa'
+import Support from './componets/pages/Support'
 
 
 
@@ -29,8 +30,9 @@ const App = () => {
             <Route path="/telecel" element={<Telecel />} />
             <Route path="/orders" element={<Orders />} />
             <Route path="/wallet" element={<Wallet />} />
-            <Route path="/account" element={<Account />} />
+            {/* <Route path="/community" element={<Community />} /> */}
             <Route path="/mtn-afa" element={<AFA />} />
+            <Route path="/support" element={<Support />} />
           </Routes>
         </main>
       </div>

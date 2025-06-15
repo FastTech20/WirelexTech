@@ -15,11 +15,7 @@ const navItems = [
   { name: 'MTN Data', path: '/mtn-data', icon: <FaWifi /> },
   { name: 'Telecel', path: '/telecel', icon: <FaWifi /> },
   { name: 'MTN AFA', path: '/mtn-afa', icon: <FaWifi /> },
-  // { name: 'Transaction', path: '/transactions', icon: <FaMoneyBillWave /> },
-  // { name: 'My Orders', path: '/orders', icon: <FaMoneyBillWave /> },
   { name: 'Top up Wallet', path: '/wallet', icon: <FaWallet /> },
-  // { name: 'Account', path: '/account', icon: <FaUser /> },
-  // { name: 'API', path: '/api', icon: <FaPlug /> },
   { name: 'Join our community', path: '/community', icon: <FaUsers /> },
   { name: 'Support', path: '/support', icon: <FaHeadset /> },
 ];
@@ -46,7 +42,7 @@ const Sidebar = () => {
       <div className="footer">
         <div className="user-info">Hello, <strong>Fel</strong></div>
         <div className="balance">Balance: <span>₵0.00</span></div>
-        <button className="topup-btn">Top Up</button>
+        {/* <button className="topup-btn">Top Up</button> */}
         <NavLink to="/logout" className="logout">
           <FaSignOutAlt /> Log Out
         </NavLink>
