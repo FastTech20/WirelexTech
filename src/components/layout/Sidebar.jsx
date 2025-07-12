@@ -9,7 +9,7 @@ import {
 import '../Style/Sidebar.css';
 
 const navItems = [
-  { name: 'Dashboard', path: '/dashboard', icon: <FaTachometerAlt /> },
+  { name: 'Dashboard', path: '/', icon: <FaTachometerAlt /> },
   // { name: 'Services', path: '/services', icon: <FaPlug /> },
   { name: 'AirtelTigo', path: '/airtel-tigo', icon: <FaWifi /> },
   { name: 'MTN Data', path: '/mtn-data', icon: <FaWifi /> },
