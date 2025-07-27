@@ -1,3 +1,4 @@
+// src/pages/AirtelTigo.jsx
 import React from 'react';
 import {
   Box,
@@ -12,42 +13,30 @@ import {
   Stack,
 } from '@mui/material';
 
-const MTN = () => {
+const AirtelTigo = () => {
   const [packageValue, setPackageValue] = React.useState('');
   const [quantity, setQuantity] = React.useState(1);
 
   return (
     <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        bgcolor: '#f3f6f9',
-        overflow: 'hidden',
-        p: 2,
-      }}
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      minHeight="100vh"
+      p={2} // padding for smaller screens
     >
       <Paper
-        elevation={4}
         sx={{
           p: 4,
           width: '100%',
-          maxWidth: 400,
-          bgcolor: 'white',
-          borderRadius: 3,
+          maxWidth: 400, // Keeps it responsive on larger screens
         }}
+        elevation={3}
       >
-        <Typography variant="h5" gutterBottom textAlign="center" sx={{ color: '#003366' }}>
-          MTN Data Bundles
+        <Typography variant="h5" gutterBottom>
+          AirtelTigo Data Bundles
         </Typography>
-
-        <Typography
-          variant="subtitle1"
-          color="text.secondary"
-          gutterBottom
-          textAlign="center"
-        >
+        <Typography variant="subtitle1" color="text.secondary" gutterBottom>
           ₵3.90 – ₵210.00
         </Typography>
 
@@ -59,29 +48,26 @@ const MTN = () => {
               label="Package"
               onChange={(e) => setPackageValue(e.target.value)}
             >
-              <MenuItem value="5">₵5 - 500MB</MenuItem>
+              <MenuItem value="3.90">₵3.90 - 300MB</MenuItem>
               <MenuItem value="10">₵10 - 1GB</MenuItem>
               <MenuItem value="20">₵20 - 2.5GB</MenuItem>
             </Select>
           </FormControl>
 
           <TextField
-            label="MTN Quantity"
+            label="AirtelTigo Quantity"
             type="number"
             fullWidth
             value={quantity}
             onChange={(e) => setQuantity(e.target.value)}
           />
 
-          <Box textAlign="center">
+          <Box display="flex" justifyContent="center">
             <Button
               variant="contained"
+              color="primary"
               sx={{
-                width: '150px',
-                backgroundColor: '#003366',
-                '&:hover': {
-                  backgroundColor: '#00509e',
-                },
+                width: 150,
               }}
             >
               Add to Cart
@@ -89,10 +75,10 @@ const MTN = () => {
           </Box>
 
           <Typography variant="body2">
-            <strong>WirelexTech:</strong> MTN-Data
+            <strong>SKU:</strong> iShare
           </Typography>
           <Typography variant="body2">
-            <strong>Category:</strong> MTN
+            <strong>Category:</strong> AirtelTigo
           </Typography>
         </Stack>
       </Paper>
@@ -100,4 +86,4 @@ const MTN = () => {
   );
 };
 
-export default MTN;
+export default AirtelTigo;

@@ -1,3 +1,4 @@
+// src/pages/Telecel.jsx
 import React from 'react';
 import {
   Box,
@@ -12,42 +13,23 @@ import {
   Stack,
 } from '@mui/material';
 
-const MTN = () => {
+const Telecel = () => {
   const [packageValue, setPackageValue] = React.useState('');
   const [quantity, setQuantity] = React.useState(1);
 
   return (
     <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        bgcolor: '#f3f6f9',
-        overflow: 'hidden',
-        p: 2,
-      }}
+      display="flex"
+      justifyContent="center"
+      alignItems="center"
+      minHeight="100vh"
+      px={2} // padding on small screens
     >
-      <Paper
-        elevation={4}
-        sx={{
-          p: 4,
-          width: '100%',
-          maxWidth: 400,
-          bgcolor: 'white',
-          borderRadius: 3,
-        }}
-      >
-        <Typography variant="h5" gutterBottom textAlign="center" sx={{ color: '#003366' }}>
-          MTN Data Bundles
+      <Paper sx={{ p: 4, maxWidth: 500, width: '100%' }}>
+        <Typography variant="h5" gutterBottom>
+          Telecel Data Bundles
         </Typography>
-
-        <Typography
-          variant="subtitle1"
-          color="text.secondary"
-          gutterBottom
-          textAlign="center"
-        >
+        <Typography variant="subtitle1" color="text.secondary" gutterBottom>
           ₵3.90 – ₵210.00
         </Typography>
 
@@ -59,29 +41,26 @@ const MTN = () => {
               label="Package"
               onChange={(e) => setPackageValue(e.target.value)}
             >
-              <MenuItem value="5">₵5 - 500MB</MenuItem>
-              <MenuItem value="10">₵10 - 1GB</MenuItem>
-              <MenuItem value="20">₵20 - 2.5GB</MenuItem>
+              <MenuItem value="5">₵5 - 400MB</MenuItem>
+              <MenuItem value="10">₵10 - 1.2GB</MenuItem>
+              <MenuItem value="20">₵20 - 3GB</MenuItem>
             </Select>
           </FormControl>
 
           <TextField
-            label="MTN Quantity"
+            label="Telecel Quantity"
             type="number"
             fullWidth
             value={quantity}
             onChange={(e) => setQuantity(e.target.value)}
           />
 
-          <Box textAlign="center">
+          <Box display="flex" justifyContent="center">
             <Button
               variant="contained"
+              color="primary"
               sx={{
                 width: '150px',
-                backgroundColor: '#003366',
-                '&:hover': {
-                  backgroundColor: '#00509e',
-                },
               }}
             >
               Add to Cart
@@ -89,10 +68,10 @@ const MTN = () => {
           </Box>
 
           <Typography variant="body2">
-            <strong>WirelexTech:</strong> MTN-Data
+            <strong>SKU:</strong> Telecel-Data
           </Typography>
           <Typography variant="body2">
-            <strong>Category:</strong> MTN
+            <strong>Category:</strong> Telecel
           </Typography>
         </Stack>
       </Paper>
@@ -100,4 +79,4 @@ const MTN = () => {
   );
 };
 
-export default MTN;
+export default Telecel;
