@@ -11,7 +11,7 @@ const Dashboard = () => {
         <div className="card balance-card">
           <p className="label">Current Balance</p>
           <h2>₵0.00</h2>
-          <button className="topup-button">Top Up</button>
+          <button className="topup-button bg-amber-200 text-green-400">Top Up</button>
         </div>
 
         <div className="card">
