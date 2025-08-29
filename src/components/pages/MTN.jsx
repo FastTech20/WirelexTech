@@ -1,32 +1,38 @@
+// src/componets/pages/AirtleTigo.jsx
 import React from 'react';
-// import '../Style/airtime.css';
+// import '../Style/airteltigo.css';
 
 const MTN = () => {
   return (
-    <div className="airtime-container">
-      <h1 className="airtime-title">MTN</h1>
-      <p className="airtime-price">₵3.90 – ₵210.00</p>
+    <div className="bg-[#f1f5f9] mx-auto text-left h-full p-4 mt-3.5 max-w-120">
+      <div className="text-xl md:text-2xl font-bold text-center">MTN</div>
+      <div className=" mt-5 mb-5 text-center text-xl md:text-2xl">₵3.90 – ₵210.00</div>
 
-      <div className="airtime-card">
-        <label className="airtime-label">Packages</label>
-        <select className="airtime-select">
-          <option>Choose an option</option>
-          <option>₵5 - 500MB</option>
-          <option>₵10 - 1GB</option>
-          <option>₵20 - 2.5GB</option>
-        </select>
 
-        <label className="airtime-label text-white bg-amber-600 ">MTN quantity</label>
-        <input type="number" className="airtime-input" placeholder="Enter quantity" />
+      <div className='bg-white p-3 m-3'>
+          <label className='text-[#1e293b] font-bold'>Packages</label><br></br>
+          <select className="border-1 border-gray-600 mt-1.5 mb-7 w-full p-1.5">
+            <option>Choose an option</option>
+            <option>₵3.90 - 300MB</option>
+            <option>₵10.00 - 1GB</option>
+            <option>₵20.00 - 2.5GB</option>
+            {/* Add more as needed */}
+          </select>
+          <br></br>
 
-        <button className="bg-blue-400 rounded-3xl p-2.5 font-bold text-white
-        hover:cursor-pointer hover: scale-100">Add to cart</button>
+          <label className='text-[#1e293b] font-bold'>MTN Quantity</label><br></br>
+          <input className="border-1 border-gray-600 mt-1 w-full p-1.5" type="number" min="1" placeholder="Enter quantity" />
 
-        <div className="airtime-footer">
-          <p> WirelxTech:<span className="airtime-tag">MTN-Data</span></p>
-          <p>Category: <span className="airtime-tag">MTN</span></p>
-        </div>
+          <br></br>
+          <button className="bg-blue-700 text-white font-bold mt-5 mb-5 p-3.5 
+          rounded-4xl cursor-pointer w-full">Add to Cart</button>
+
+          <div className="meta-info text-gray-600">
+            <p>WirelexTech: <span className='text-black'>MTN-Data</span></p>
+            <p>Category: <span className='text-black'>MTN</span></p>
+          </div>
       </div>
+      
     </div>
   );
 };
