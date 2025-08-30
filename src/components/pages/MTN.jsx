@@ -4,7 +4,7 @@ import React from 'react';
 
 const MTN = () => {
   return (
-    <div className="bg-[#f1f5f9] mx-auto text-left h-full p-4 mt-3.5 max-w-120">
+    <div className="bg-[#f1f5f9] mx-auto text-left h-5/6 rounded-lg p-4 mt-3.5 max-w-120">
       <div className="text-xl md:text-2xl font-bold text-center">MTN</div>
       <div className=" mt-5 mb-5 text-center text-xl md:text-2xl">₵3.90 – ₵210.00</div>
 

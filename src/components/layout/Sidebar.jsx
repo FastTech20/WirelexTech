@@ -28,8 +28,10 @@ const Sidebar = () => {
   return (
     <>
       {/* Mobile Navbar (Hamburger only, no text) */}
-      <div className="lg:hidden bg-slate-900 text-white flex 
-      items-center  shadow-md absolute z-50 w-8 h-8 p-2 cursor-pointer " onClick={() => setOpen(true)}>
+      <div className="
+      lg:hidden bg-slate-900 text-white flex 
+      items-center  shadow-md absolute z-50 
+      w-8 h-8 p-2 md:w-9 md:h-10  cursor-pointer " onClick={() => setOpen(true)}>
         <button className="cursor-pointer" onClick={() => setOpen(true)}>
           <FaBars size={15} />
         </button>
@@ -69,7 +71,7 @@ const Sidebar = () => {
                 key={name}
                 to={path}
                 className={({ isActive }) =>
-                  `flex items-center gap-3 px-4 py-3 rounded-md transition-colors 
+                  `flex items-center gap-3 px-4 py-3  transition-colors 
                   ${isActive ? "bg-blue-600" : "hover:bg-slate-800"}`
                 }
                 // ⚡ Don't auto-close on click; let user close manually
